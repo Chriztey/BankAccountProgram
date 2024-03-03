@@ -11,6 +11,14 @@ fun main () {
     chrisBankAccount.withdraw(100.00)
     chrisBankAccount.displayTransactionHistory()
 
-    println("total ${chrisBankAccount.accountHolder}'s balance is ${chrisBankAccount.balance}")
+    println("total ${chrisBankAccount.accountHolder}'s balance is ${chrisBankAccount.acctBalance()}")
+
+    val sarahBankAccount = BankAccount("Sarah", 0.0)
+    sarahBankAccount.deposit(100.0)
+    sarahBankAccount.withdraw(10.0)
+    sarahBankAccount.deposit(300.0)
+    println("total ${sarahBankAccount.accountHolder}'s balance is $${sarahBankAccount.acctBalance()}")
+
+
 
 }
